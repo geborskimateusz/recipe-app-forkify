@@ -23,11 +23,33 @@ export default class Recipe {
 
     calcTime(){
         const numIng = this.ingredients.length;
-        const peroids = Math.ceil(numIng / 3);
-        this.time = peroids * 15;
+        const periods = Math.ceil(numIng / 3);
+        this.time = periods * 15;
     }
 
     calcServings() {
         this.servings = 4;
     }
+
+    parseIngredients(){
+        const unitLong = [
+            'tablespoons','tablespoon','ounces','ounce','teaspoons','teaspoon','cups','pounds'];
+        const unitShort = [
+            ' tbsp ',' tbsp ',' oz ',' oz ',' tsp ',' tsp' ,' cup ',' pound '];
+
+        const newIngredients = this.ingredients.map(el => {
+            let ingredient = el.toLowerCase();
+            unitLong.forEach((unit, i) => {
+                ingredient = ingredient.replace(unit,unitShort[i]);
+            });
+
+            ingredient = ingredient.replace(/ *\([^)]*\) */g, '');
+
+            return ingredient;
+
+        });
+
+        this.ingredients =  newIngredients;
+
+    };
 }
