@@ -16,7 +16,6 @@ export default class Recipe {
             this.url = res.data.recipe.source_url;
             this.ingredients = res.data.recipe.ingredients;
         } catch (e) {
-            console.log(e);
             alert('something went wrong :(')
         }
     };
@@ -93,8 +92,6 @@ export default class Recipe {
     }
 
     updateServings (type) {
-
-        console.log('update servings');
 
         const newServings = type === 'dec' ? this.servings - 1 : this.servings + 1;
 
