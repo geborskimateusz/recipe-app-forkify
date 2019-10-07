@@ -1,4 +1,5 @@
 # recipe-app-forkify
 Recipes web-app build with VanillaJS
 
-Find on: [https://geborskimateusz.github.io/recipe-app-forkify/](https://geborskimateusz.github.io/recipe-app-forkify/)
+Project build during The Complete JavaScript Course 2019: Build Real Projects! on Udemy:
+Find it on: [The Complete JavaScript Course 2019: Build Real Projects!](The Complete JavaScript Course 2019: Build Real Projects!)
