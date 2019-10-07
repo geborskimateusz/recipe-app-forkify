@@ -1,5 +1,5 @@
 # recipe-app-forkify
-Recipes web-app build with VanillaJS
+Recipes web-app build with VanillaJS using [FOOD2FORK](https://www.food2fork.com/about/api) third party API.
 
 Project build during The Complete JavaScript Course 2019: Build Real Projects! on Udemy:
 
